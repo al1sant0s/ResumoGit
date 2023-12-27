@@ -1,0 +1,46 @@
+---
+title: "Alguns comandos do Git"
+toc: true
+format: 
+  html: 
+    code-fold: true
+editor: visual
+---
+
+O [Git][git] é um sistema para controle de versionamento de arquivos. A seguir listamos alguns dos comandos mais úteis do [Git][git].
+
+## [`git init`](https://git-scm.com/docs/git-init/pt_BR)
+
+Cria um repositório local do git no diretório atual.
+
+## [`git status`](https://git-scm.com/docs/git-status/pt_BR)
+
+Mostra o status dos arquivos do repositório atual. Os arquivos que estão na **Staging Area** ficam representados na cor verde, enquanto os arquivos que não estão na **Staging Area** aparecem na cor vermelha.
+
+## [`git add <filename>`](https://git-scm.com/docs/git-add/pt_BR)
+
+Adiciona algum arquivo do repositório atual para a **Staging Area** .
+O Comando `git add .` adiciona todos os arquivos do diretório atual
+na **Staging Area**.
+
+## [`git commit -m ["messagem"]`](https://git-scm.com/docs/git-commit/pt_BR)
+
+Realiza um commit dos arquivos que foram colocados na **Staging Area**.
+
+## [`git log`](https://git-scm.com/docs/git-log/pt_BR)
+
+Mostra todos os commits na branch atual. Uma variação desse comando é
+`git log --pretty=oneline` que exibe os commits de forma mais resumida.
+
+
+## [`git checkout [branch]`](https://git-scm.com/docs/git-checkout/pt_BR)
+
+Esse comando é utilizado para acessar um commit específico de uma branch.
+
+## [`git branch [options]`](https://git-scm.com/docs/git-branch/pt_BR)
+
+Permite criar, listar ou excluir branches. Por exemplo, para criar uma branch chamada main, utilize o comando `git branch "main"`.
+
+
+[git]: https://git-scm.com/
+
