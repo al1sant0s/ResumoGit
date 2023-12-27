@@ -45,7 +45,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#git-init" id="toc-git-init" class="nav-link active" data-scroll-target="#git-init"><code>git init</code></a></li>
+  <li><a href="#o-que-é-o-git" id="toc-o-que-é-o-git" class="nav-link active" data-scroll-target="#o-que-é-o-git">O que é o Git?</a></li>
+  <li><a href="#lista-de-comandos-mais-utilizados-do-git" id="toc-lista-de-comandos-mais-utilizados-do-git" class="nav-link" data-scroll-target="#lista-de-comandos-mais-utilizados-do-git">Lista de comandos mais utilizados do Git</a>
+  <ul class="collapse">
+  <li><a href="#git-init" id="toc-git-init" class="nav-link" data-scroll-target="#git-init"><code>git init</code></a></li>
   <li><a href="#git-status" id="toc-git-status" class="nav-link" data-scroll-target="#git-status"><code>git status</code></a></li>
   <li><a href="#git-add-filename" id="toc-git-add-filename" class="nav-link" data-scroll-target="#git-add-filename"><code>git add &lt;filename&gt;</code></a></li>
   <li><a href="#git-commit--m-messagem" id="toc-git-commit--m-messagem" class="nav-link" data-scroll-target="#git-commit--m-messagem"><code>git commit -m ["messagem"]</code></a></li>
@@ -53,6 +56,9 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#git-checkout-branch" id="toc-git-checkout-branch" class="nav-link" data-scroll-target="#git-checkout-branch"><code>git checkout [branch]</code></a></li>
   <li><a href="#git-branch-options" id="toc-git-branch-options" class="nav-link" data-scroll-target="#git-branch-options"><code>git branch [options]</code></a></li>
   <li><a href="#git-remote-options" id="toc-git-remote-options" class="nav-link" data-scroll-target="#git-remote-options"><code>git remote [options]</code></a></li>
+  <li><a href="#git-push-options" id="toc-git-push-options" class="nav-link" data-scroll-target="#git-push-options"><code>git push [options]</code></a></li>
+  </ul></li>
+  <li><a href="#aprenda-mais-sobre-o-git-e-github" id="toc-aprenda-mais-sobre-o-git-e-github" class="nav-link" data-scroll-target="#aprenda-mais-sobre-o-git-e-github">Aprenda mais sobre o Git e Github</a></li>
   </ul>
 </nav>
 </div>
@@ -75,38 +81,58 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<section id="o-que-é-o-git" class="level2">
+<h2 class="anchored" data-anchor-id="o-que-é-o-git">O que é o Git?</h2>
 <p>O <a href="https://git-scm.com/">Git</a> é um sistema para controle de versionamento de arquivos. A seguir listamos alguns dos comandos mais úteis do <a href="https://git-scm.com/">Git</a>.</p>
-<section id="git-init" class="level2">
-<h2 class="anchored" data-anchor-id="git-init"><a href="https://git-scm.com/docs/git-init/pt_BR"><code>git init</code></a></h2>
+</section>
+<section id="lista-de-comandos-mais-utilizados-do-git" class="level2">
+<h2 class="anchored" data-anchor-id="lista-de-comandos-mais-utilizados-do-git">Lista de comandos mais utilizados do Git</h2>
+<section id="git-init" class="level3">
+<h3 class="anchored" data-anchor-id="git-init"><a href="https://git-scm.com/docs/git-init/pt_BR"><code>git init</code></a></h3>
 <p>Cria um repositório local do git no diretório atual.</p>
 </section>
-<section id="git-status" class="level2">
-<h2 class="anchored" data-anchor-id="git-status"><a href="https://git-scm.com/docs/git-status/pt_BR"><code>git status</code></a></h2>
+<section id="git-status" class="level3">
+<h3 class="anchored" data-anchor-id="git-status"><a href="https://git-scm.com/docs/git-status/pt_BR"><code>git status</code></a></h3>
 <p>Mostra o status dos arquivos do repositório atual. Os arquivos que estão na <strong>Staging Area</strong> ficam representados na cor verde, enquanto os arquivos que não estão na <strong>Staging Area</strong> aparecem na cor vermelha.</p>
 </section>
-<section id="git-add-filename" class="level2">
-<h2 class="anchored" data-anchor-id="git-add-filename"><a href="https://git-scm.com/docs/git-add/pt_BR"><code>git add &lt;filename&gt;</code></a></h2>
+<section id="git-add-filename" class="level3">
+<h3 class="anchored" data-anchor-id="git-add-filename"><a href="https://git-scm.com/docs/git-add/pt_BR"><code>git add &lt;filename&gt;</code></a></h3>
 <p>Adiciona algum arquivo do repositório atual para a <strong>Staging Area</strong> . O Comando <code>git add .</code> adiciona todos os arquivos do diretório atual na <strong>Staging Area</strong>.</p>
 </section>
-<section id="git-commit--m-messagem" class="level2">
-<h2 class="anchored" data-anchor-id="git-commit--m-messagem"><a href="https://git-scm.com/docs/git-commit/pt_BR"><code>git commit -m ["messagem"]</code></a></h2>
+<section id="git-commit--m-messagem" class="level3">
+<h3 class="anchored" data-anchor-id="git-commit--m-messagem"><a href="https://git-scm.com/docs/git-commit/pt_BR"><code>git commit -m ["messagem"]</code></a></h3>
 <p>Realiza um commit dos arquivos que foram colocados na <strong>Staging Area</strong>.</p>
 </section>
-<section id="git-log" class="level2">
-<h2 class="anchored" data-anchor-id="git-log"><a href="https://git-scm.com/docs/git-log/pt_BR"><code>git log</code></a></h2>
+<section id="git-log" class="level3">
+<h3 class="anchored" data-anchor-id="git-log"><a href="https://git-scm.com/docs/git-log/pt_BR"><code>git log</code></a></h3>
 <p>Mostra todos os commits na branch atual. Uma variação desse comando é <code>git log --pretty=oneline</code> que exibe os commits de forma mais resumida.</p>
 </section>
-<section id="git-checkout-branch" class="level2">
-<h2 class="anchored" data-anchor-id="git-checkout-branch"><a href="https://git-scm.com/docs/git-checkout/pt_BR"><code>git checkout [branch]</code></a></h2>
+<section id="git-checkout-branch" class="level3">
+<h3 class="anchored" data-anchor-id="git-checkout-branch"><a href="https://git-scm.com/docs/git-checkout/pt_BR"><code>git checkout [branch]</code></a></h3>
 <p>Esse comando é utilizado para acessar um commit específico de uma branch.</p>
 </section>
-<section id="git-branch-options" class="level2">
-<h2 class="anchored" data-anchor-id="git-branch-options"><a href="https://git-scm.com/docs/git-branch/pt_BR"><code>git branch [options]</code></a></h2>
+<section id="git-branch-options" class="level3">
+<h3 class="anchored" data-anchor-id="git-branch-options"><a href="https://git-scm.com/docs/git-branch/pt_BR"><code>git branch [options]</code></a></h3>
 <p>Permite criar, listar ou excluir branches. Por exemplo, para criar uma branch chamada main, utilize o comando <code>git branch "main"</code>.</p>
 </section>
-<section id="git-remote-options" class="level2">
-<h2 class="anchored" data-anchor-id="git-remote-options"><a href="https://git-scm.com/docs/git-remote/pt_BR"><code>git remote [options]</code></a></h2>
-<p>Permite gerenciar um conjunto de repositórios remotos.</p>
+<section id="git-remote-options" class="level3">
+<h3 class="anchored" data-anchor-id="git-remote-options"><a href="https://git-scm.com/docs/git-remote/pt_BR"><code>git remote [options]</code></a></h3>
+<p>Permite gerenciar um conjunto de repositórios remotos. Talvez o modo mais utilizado desse comando seja <code>git remote add origin https://github.com/&lt;username&gt;/&lt;repository_name&gt;.git</code>, que permite configurar um diretório remoto do Github para a máquina em uso.</p>
+</section>
+<section id="git-push-options" class="level3">
+<h3 class="anchored" data-anchor-id="git-push-options"><a href="https://git-scm.com/docs/git-push/pt_BR"><code>git push [options]</code></a></h3>
+<p>Envia novos commits para o repositório remoto e atualiza as informações dos objetos associados a um repositório remoto.</p>
+</section>
+</section>
+<section id="aprenda-mais-sobre-o-git-e-github" class="level2">
+<h2 class="anchored" data-anchor-id="aprenda-mais-sobre-o-git-e-github">Aprenda mais sobre o Git e Github</h2>
+<p>Para aprender mais sobre o Git, você pode ler online o livro <em>Pro Git</em>, escrito por <strong>Scott Chacon</strong> e <strong>Ben Straub</strong>. Acesse o livro (parcialmente traduzido em português) <a href="https://git-scm.com/book/pt-br/v2">aqui</a>.</p>
+<p>Você também pode assistir três vídeosaulas que tratam sobre o Git e Github e que foram produzidas pelo professor da UFPB, <strong>Pedro Rafael Diniz Marinho</strong>:</p>
+<ul>
+<li><a href="https://youtu.be/O9rHwmh_kv0">Vídeo 1</a></li>
+<li><a href="https://youtu.be/Lgc2DdoZgsk">Vídeo 2</a></li>
+<li><a href="https://youtu.be/hMWGZ8fAbg4">Vídeo 3</a></li>
+</ul>
 </section>
 
 </main>

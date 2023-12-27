@@ -7,36 +7,56 @@ format:
 editor: visual
 ---
 
+## O que é o Git?
+
 O [Git](https://git-scm.com/) é um sistema para controle de versionamento de arquivos. A seguir listamos alguns dos comandos mais úteis do [Git](https://git-scm.com/).
 
-## [`git init`](https://git-scm.com/docs/git-init/pt_BR)
+## Lista de comandos mais utilizados do Git
+
+### [`git init`](https://git-scm.com/docs/git-init/pt_BR)
 
 Cria um repositório local do git no diretório atual.
 
-## [`git status`](https://git-scm.com/docs/git-status/pt_BR)
+### [`git status`](https://git-scm.com/docs/git-status/pt_BR)
 
 Mostra o status dos arquivos do repositório atual. Os arquivos que estão na **Staging Area** ficam representados na cor verde, enquanto os arquivos que não estão na **Staging Area** aparecem na cor vermelha.
 
-## [`git add <filename>`](https://git-scm.com/docs/git-add/pt_BR)
+### [`git add <filename>`](https://git-scm.com/docs/git-add/pt_BR)
 
 Adiciona algum arquivo do repositório atual para a **Staging Area** . O Comando `git add .` adiciona todos os arquivos do diretório atual na **Staging Area**.
 
-## [`git commit -m ["messagem"]`](https://git-scm.com/docs/git-commit/pt_BR)
+### [`git commit -m ["messagem"]`](https://git-scm.com/docs/git-commit/pt_BR)
 
 Realiza um commit dos arquivos que foram colocados na **Staging Area**.
 
-## [`git log`](https://git-scm.com/docs/git-log/pt_BR)
+### [`git log`](https://git-scm.com/docs/git-log/pt_BR)
 
 Mostra todos os commits na branch atual. Uma variação desse comando é `git log --pretty=oneline` que exibe os commits de forma mais resumida.
 
-## [`git checkout [branch]`](https://git-scm.com/docs/git-checkout/pt_BR)
+### [`git checkout [branch]`](https://git-scm.com/docs/git-checkout/pt_BR)
 
 Esse comando é utilizado para acessar um commit específico de uma branch.
 
-## [`git branch [options]`](https://git-scm.com/docs/git-branch/pt_BR)
+### [`git branch [options]`](https://git-scm.com/docs/git-branch/pt_BR)
 
 Permite criar, listar ou excluir branches. Por exemplo, para criar uma branch chamada main, utilize o comando `git branch "main"`.
 
-## [`git remote [options]`](https://git-scm.com/docs/git-remote/pt_BR)
+### [`git remote [options]`](https://git-scm.com/docs/git-remote/pt_BR)
 
-Permite gerenciar um conjunto de repositórios remotos.
+Permite gerenciar um conjunto de repositórios remotos. Talvez o modo mais utilizado desse comando seja `git remote add origin https://github.com/<username>/<repository_name>.git`, que permite configurar um diretório remoto do Github para a máquina em uso.
+
+### [`git push [options]`](https://git-scm.com/docs/git-push/pt_BR)
+
+Envia novos commits para o repositório remoto e atualiza as informações dos objetos associados a um repositório remoto.
+
+## Aprenda mais sobre o Git e Github
+
+Para aprender mais sobre o Git, você pode ler online o livro _Pro Git_, escrito por **Scott Chacon** e **Ben Straub**. Acesse o livro (parcialmente traduzido em português) [aqui](https://git-scm.com/book/pt-br/v2).
+
+
+Você também pode assistir três vídeosaulas que tratam sobre o Git e Github e que foram produzidas pelo professor da UFPB, **Pedro Rafael Diniz Marinho**:
+
+* [Vídeo 1](https://youtu.be/O9rHwmh_kv0)
+* [Vídeo 2](https://youtu.be/Lgc2DdoZgsk)
+* [Vídeo 3](https://youtu.be/hMWGZ8fAbg4)
+
